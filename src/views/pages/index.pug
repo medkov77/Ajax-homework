@@ -1,0 +1,25 @@
+extends ../layouts/default
+
+block variables
+
+block content
+  .page-wrapper
+    p Введите свое имя пользователя на GitHub
+      form
+        input.input-name.js-input(type="text", name="name", placeholder="Введите свое имя GitHub")
+        button.load-button.js-load Загрузить данные
+    .results-container.js-results
+  .table-wrapper
+    table
+      caption Данные пользователей jsonplaceholder
+      thead
+        tr
+          th Name
+          th Username
+          th E-mail
+          th City
+          th Phone
+          th Website
+          th Company
+      tbody.users-results
+
